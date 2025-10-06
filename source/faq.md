@@ -1,3 +1,10 @@
+---
+format:
+  html:
+    embedded-resouces: true
+  pdf: default
+--- 
+
 # Humans in the Loop: Frequently Asked Questions
 
 **Resource companion to the "Why Your AI Needs a Co-Pilot" presentation**

@@ -3,8 +3,10 @@ title: "Humans in the Loop"
 subtitle: "Why Your AI Needs a Co-Pilot"
 author: "Your Name"
 format:
+  html: 
+    embed-resources: true
   pptx:
-    reference-doc: default
+    reference-doc: assets/templates/curtin_template.pptx
     slide-level: 2
 ---
 

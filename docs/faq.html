@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>faq</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="faq_files/libs/clipboard/clipboard.min.js"></script>
+<script src="faq_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="faq_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="faq_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="faq_files/libs/quarto-html/popper.min.js"></script>
+<script src="faq_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="faq_files/libs/quarto-html/anchor.min.js"></script>
+<link href="faq_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="faq_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="faq_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="faq_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="faq_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="faq.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="humans-in-the-loop-frequently-asked-questions" class="level1">
+<h1>Humans in the Loop: Frequently Asked Questions</h1>
+<p><strong>Resource companion to the “Why Your AI Needs a Co-Pilot” presentation</strong></p>
+<hr>
+<section id="table-of-contents" class="level2">
+<h2 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#understanding-ai-basics">Understanding AI Basics</a></li>
+<li><a href="#the-three-level-framework">The Three-Level Framework</a></li>
+<li><a href="#implementation--getting-started">Implementation &amp; Getting Started</a></li>
+<li><a href="#cost--roi">Cost &amp; ROI</a></li>
+<li><a href="#technical-questions">Technical Questions</a></li>
+<li><a href="#organizational--people">Organizational &amp; People</a></li>
+<li><a href="#mining-specific-applications">Mining-Specific Applications</a></li>
+<li><a href="#risk--governance">Risk &amp; Governance</a></li>
+<li><a href="#choosing-solutions">Choosing Solutions</a></li>
+</ul>
+<hr>
+</section>
+<section id="understanding-ai-basics" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-ai-basics">Understanding AI Basics</h2>
+<section id="what-exactly-is-ai-and-how-does-it-differ-from-traditional-software" class="level3">
+<h3 class="anchored" data-anchor-id="what-exactly-is-ai-and-how-does-it-differ-from-traditional-software">What exactly is AI, and how does it differ from traditional software?</h3>
+<p>Traditional software follows explicit rules that programmers write: “If X happens, do Y.” AI systems learn patterns from data and can handle situations they weren’t explicitly programmed for.</p>
+<p>For example, a traditional dispatch system might use a fixed algorithm: “Assign the closest available truck.” An AI dispatch system learns from thousands of historical assignments to optimize for multiple factors simultaneously—distance, truck capacity, operator skill, fuel levels, traffic patterns—and adapts as conditions change.</p>
+<p>Think of traditional software as following a recipe exactly, while AI is more like a chef who’s learned from watching thousands of meals being prepared and can adapt to available ingredients.</p>
+</section>
+<section id="whats-the-difference-between-ai-machine-learning-and-deep-learning" class="level3">
+<h3 class="anchored" data-anchor-id="whats-the-difference-between-ai-machine-learning-and-deep-learning">What’s the difference between AI, Machine Learning, and Deep Learning?</h3>
+<p><strong>AI (Artificial Intelligence)</strong> is the umbrella term for any system that performs tasks requiring human-like intelligence—recognizing patterns, making predictions, understanding language.</p>
+<p><strong>Machine Learning (ML)</strong> is a subset of AI where systems learn from data rather than being explicitly programmed. Most practical AI applications today use ML.</p>
+<p><strong>Deep Learning</strong> is a subset of ML that uses neural networks with multiple layers. It’s particularly good at handling unstructured data like images, audio, and text.</p>
+<p><strong>For practical purposes in mining:</strong> You don’t need to know which specific technique is being used. You need to know what the system can do, how accurate it is, and where humans should oversee it.</p>
+</section>
+<section id="what-are-large-language-models-llms" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-large-language-models-llms">What are Large Language Models (LLMs)?</h3>
+<p>LLMs are AI systems trained on massive amounts of text data that can understand and generate human language. ChatGPT, Claude, and similar tools are LLMs.</p>
+<p><strong>What makes them revolutionary:</strong> They can read unstructured text (reports, emails, procedures), extract key information, answer questions in plain English, and generate coherent summaries or analyses.</p>
+<p><strong>In mining contexts:</strong> LLMs can analyze shift reports, summarize safety incidents, answer questions about geological data, draft routine documents, and help non-technical managers explore data using natural conversation rather than SQL queries or specialized software.</p>
+</section>
+<section id="what-are-agentic-workflows-or-ai-agents" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-agentic-workflows-or-ai-agents">What are “agentic workflows” or “AI agents”?</h3>
+<p>An <strong>agent</strong> is an AI system that can take actions, not just make predictions or recommendations.</p>
+<p>A <strong>non-agentic AI</strong> might analyze sensor data and display “High vibration detected on Truck 47.”</p>
+<p>An <strong>agentic AI</strong> might detect the vibration, check the maintenance schedule, identify that this truck is due for service anyway, find an available maintenance slot tomorrow afternoon, and automatically generate a work order.</p>
+<p><strong>Agentic workflows</strong> are when multiple AI agents coordinate to accomplish complex tasks. For example: predictive maintenance AI flags equipment → inventory management AI checks parts availability → scheduling AI finds optimal service window → work order AI notifies maintenance team → all automatically.</p>
+<p><strong>Why it matters:</strong> Agentic systems can handle entire workflows autonomously, but they require very careful design of boundaries and oversight. This is where the “Human-in-Command” level of the framework becomes critical.</p>
+</section>
+<section id="is-ai-the-same-as-automation" class="level3">
+<h3 class="anchored" data-anchor-id="is-ai-the-same-as-automation">Is AI the same as automation?</h3>
+<p>Not exactly. Automation executes fixed, pre-programmed tasks. AI can adapt and learn.</p>
+<p><strong>Traditional automation:</strong> “When temperature exceeds 85°C, trigger an alarm.” The rule is fixed.</p>
+<p><strong>AI:</strong> “Learn what normal temperature patterns look like for this equipment under different conditions, and flag anomalies.” The system adapts based on data.</p>
+<p>Many mining operations have used automation for decades (automated crushing circuits, ventilation control). AI takes automation further by adding learning and adaptation capabilities.</p>
+<hr>
+</section>
+</section>
+<section id="the-three-level-framework" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-level-framework">The Three-Level Framework</h2>
+<section id="can-you-explain-the-three-levels-of-human-oversight-more-simply" class="level3">
+<h3 class="anchored" data-anchor-id="can-you-explain-the-three-levels-of-human-oversight-more-simply">Can you explain the three levels of human oversight more simply?</h3>
+<p><strong>Level 1 - Human-in-the-Loop:</strong> AI is your advisor. It suggests, you decide. Like a GPS suggesting a route—you choose whether to follow it.</p>
+<p><strong>Level 2 - Human-on-the-Loop:</strong> AI can act automatically, but you’re watching and can intervene. Like cruise control—it’s driving, but you’re monitoring and can take over.</p>
+<p><strong>Level 3 - Human-in-Command:</strong> You set the strategic rules and boundaries that AI must operate within, even if you’re not involved in each decision. Like setting speed limits on roads.</p>
+</section>
+<section id="how-do-i-know-which-level-is-right-for-a-specific-application" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-know-which-level-is-right-for-a-specific-application">How do I know which level is right for a specific application?</h3>
+<p>Ask three questions:</p>
+<ol type="1">
+<li><strong>What are the stakes if the AI is wrong?</strong>
+<ul>
+<li>High stakes (safety, major cost, legal) → Human-in-the-Loop</li>
+<li>Medium stakes (reversible, limited impact) → Human-on-the-Loop might work</li>
+<li>Defining what’s acceptable → Human-in-Command</li>
+</ul></li>
+<li><strong>What’s the volume of decisions?</strong>
+<ul>
+<li>Low volume (10s per day) → Human-in-the-Loop is feasible</li>
+<li>High volume (1000s per day) → Human-on-the-Loop is necessary</li>
+</ul></li>
+<li><strong>How clearly can you define success?</strong>
+<ul>
+<li>Ambiguous, context-dependent → Human-in-the-Loop</li>
+<li>Clear, measurable criteria → Human-on-the-Loop possible</li>
+</ul></li>
+</ol>
+</section>
+<section id="can-a-system-use-different-levels-of-oversight-for-different-situations" class="level3">
+<h3 class="anchored" data-anchor-id="can-a-system-use-different-levels-of-oversight-for-different-situations">Can a system use different levels of oversight for different situations?</h3>
+<p>Absolutely, and this is common in well-designed systems.</p>
+<p><strong>Example:</strong> An autonomous haul truck might operate: - <strong>Human-on-the-Loop</strong> for normal driving on established haul roads - <strong>Human-in-the-Loop</strong> when approaching a loading area with manned equipment - <strong>Human-in-Command</strong> setting boundaries like “never operate within 50m of blast areas”</p>
+<p>The level of oversight can escalate based on context and risk.</p>
+</section>
+<section id="what-happens-when-ai-and-human-disagree" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-when-ai-and-human-disagree">What happens when AI and human disagree?</h3>
+<p>In <strong>Human-in-the-Loop:</strong> The human decision wins, always. The AI is advisory only.</p>
+<p>In <strong>Human-on-the-Loop:</strong> You need clear protocols. Humans should be able to override AI actions and escalate concerns. Track these disagreements—they’re valuable data. If humans constantly override the AI, either the AI needs retraining or the task isn’t appropriate for automation.</p>
+<p><strong>Best practice:</strong> Implement a feedback mechanism. When a human overrides AI, they should be able to note why. This data helps improve the system.</p>
+<hr>
+</section>
+</section>
+<section id="implementation-getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-getting-started">Implementation &amp; Getting Started</h2>
+<section id="where-should-we-start-with-ai-in-our-mining-operation" class="level3">
+<h3 class="anchored" data-anchor-id="where-should-we-start-with-ai-in-our-mining-operation">Where should we start with AI in our mining operation?</h3>
+<p>Start with the <strong>3-question test:</strong></p>
+<ol type="1">
+<li><strong>Where do we have a clear pain point?</strong> (high volume, repetitive task, or valuable insight buried in data)</li>
+<li><strong>Where do we have clean, accessible data?</strong> (don’t start where data is a mess)</li>
+<li><strong>Where would a mistake be tolerable and fixable?</strong> (don’t start with highest-stakes decisions)</li>
+</ol>
+<p><strong>Common good starting points in mining:</strong> - Predictive maintenance on a subset of equipment - Automated summarization of daily shift reports - Initial screening of geological data with expert review - Optimization of already-established processes (dispatch, scheduling)</p>
+<p><strong>Poor starting points:</strong> - Replacing a geologist’s judgment on resource estimates - Fully autonomous blast design - Anything where “the AI did it” wouldn’t be an acceptable explanation</p>
+</section>
+<section id="do-we-need-to-hire-data-scientists" class="level3">
+<h3 class="anchored" data-anchor-id="do-we-need-to-hire-data-scientists">Do we need to hire data scientists?</h3>
+<p><strong>Initially:</strong> No.&nbsp;You can start with vendor solutions and consultants who build the initial systems.</p>
+<p><strong>As you scale:</strong> Yes, eventually. Once you have 3-5 AI applications running, you’ll want internal capability to: - Manage vendor relationships knowledgeably - Coordinate AI strategy across departments - Customize and tune systems to your specific context - Troubleshoot when things don’t work as expected</p>
+<p><strong>But your first hire shouldn’t be a data scientist.</strong> It should be someone who understands your operations AND has enough technical literacy to bridge between business needs and AI solutions. This might be an industrial engineer, a mining engineer who’s done some coding, or an operations manager who’s curious about technology.</p>
+</section>
+<section id="what-if-our-data-is-messy-or-siloed-across-multiple-systems" class="level3">
+<h3 class="anchored" data-anchor-id="what-if-our-data-is-messy-or-siloed-across-multiple-systems">What if our data is messy or siloed across multiple systems?</h3>
+<p>This is the <strong>#1 barrier</strong> to AI adoption, and almost every organization faces it.</p>
+<p><strong>Don’t wait for perfect data.</strong> Here’s the pragmatic approach:</p>
+<ol type="1">
+<li><p><strong>Find your cleanest data source</strong> and start there. Maybe it’s your fleet management system or your geological database. Prove value with that one source.</p></li>
+<li><p><strong>Use early AI projects to justify data infrastructure investment.</strong> “The predictive maintenance pilot saved us $200K. To roll it out to the whole fleet, we need to integrate our maintenance database with our fleet management system.”</p></li>
+<li><p><strong>Consider AI that can handle messy data.</strong> Some modern LLMs are surprisingly good at working with inconsistent, poorly structured data. They’re not as accurate as they would be with clean data, but they might be “good enough” to prove value.</p></li>
+<li><p><strong>Be realistic about timelines.</strong> If your data is truly a mess, allocate 6-12 months for data preparation before expecting AI to deliver magic results.</p></li>
+</ol>
+</section>
+<section id="how-long-does-it-take-to-implement-an-ai-solution" class="level3">
+<h3 class="anchored" data-anchor-id="how-long-does-it-take-to-implement-an-ai-solution">How long does it take to implement an AI solution?</h3>
+<p><strong>Rough timelines by complexity:</strong></p>
+<p><strong>Simple pilot (e.g., LLM analyzing shift reports):</strong> - 1-2 months for setup and testing - Another 1-2 months to validate accuracy - Total: 2-4 months to prove concept</p>
+<p><strong>Medium complexity (e.g., predictive maintenance on one equipment type):</strong> - 2-3 months for data collection and baseline - 2-3 months for model development - 3-6 months for validation and tuning - Total: 6-12 months to production</p>
+<p><strong>High complexity (e.g., autonomous haulage):</strong> - 6-12 months for infrastructure and safety case - 6-12 months for pilot with limited fleet - 12-24 months for full rollout - Total: 2-4 years to full deployment</p>
+<p><strong>Golden rule:</strong> Double your initial estimate. AI projects almost always take longer than expected, but usually because of organizational and data challenges, not technology limitations.</p>
+</section>
+<section id="should-we-build-custom-ai-or-buy-off-the-shelf-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="should-we-build-custom-ai-or-buy-off-the-shelf-solutions">Should we build custom AI or buy off-the-shelf solutions?</h3>
+<p><strong>For 90% of applications: Buy, don’t build.</strong></p>
+<p><strong>Buy when:</strong> - The application is common across industries (predictive maintenance, document analysis, anomaly detection) - Vendors have proven solutions in your domain - You want faster time-to-value - You have limited internal AI expertise</p>
+<p><strong>Build (or heavily customize) when:</strong> - The application is unique to your specific operation - It’s a core competitive advantage you want to protect - Off-the-shelf solutions don’t exist for your use case - You have a specific integration requirement vendors can’t meet</p>
+<p><strong>Hybrid approach (most common):</strong> Buy platform solutions and customize them. For example, buy a predictive maintenance platform from a vendor but train it on your specific equipment and operational patterns.</p>
+<hr>
+</section>
+</section>
+<section id="cost-roi" class="level2">
+<h2 class="anchored" data-anchor-id="cost-roi">Cost &amp; ROI</h2>
+<section id="how-much-does-ai-implementation-actually-cost" class="level3">
+<h3 class="anchored" data-anchor-id="how-much-does-ai-implementation-actually-cost">How much does AI implementation actually cost?</h3>
+<p>Costs vary dramatically by scope and approach. Here are realistic ranges:</p>
+<p><strong>Small pilot projects:</strong> - LLM-based document analysis: $10-30K (software subscription + setup) - Predictive maintenance for 5-10 assets: $50-100K (sensors if needed + software + integration) - Geological data analysis tool: $20-50K (software + training)</p>
+<p><strong>Medium implementations:</strong> - Fleet-wide predictive maintenance: $200K-500K (year 1) - Autonomous truck pilot (3-5 trucks): $1-3M (equipment modifications + systems) - Mine-wide operational optimization: $300K-800K (software + integration + change management)</p>
+<p><strong>Large transformations:</strong> - Full autonomous haulage (50+ trucks): $10-50M+ (multi-year program) - Integrated smart mine platform: $5-20M+ (depends on scale)</p>
+<p><strong>Ongoing costs:</strong> Budget 15-25% of initial implementation cost annually for maintenance, support, and continuous improvement.</p>
+</section>
+<section id="what-roi-should-we-expect-and-how-quickly" class="level3">
+<h3 class="anchored" data-anchor-id="what-roi-should-we-expect-and-how-quickly">What ROI should we expect, and how quickly?</h3>
+<p><strong>Realistic ROI expectations by application:</strong></p>
+<p><strong>Predictive maintenance:</strong> - ROI: 3-5x investment over 3 years - Payback period: 12-18 months - Primary benefits: Reduced downtime (20-40%), lower maintenance costs (10-20%)</p>
+<p><strong>Operational optimization (dispatch, scheduling):</strong> - ROI: 2-4x investment over 3 years - Payback period: 6-12 months - Primary benefits: Increased throughput (5-15%), better resource utilization</p>
+<p><strong>Autonomous operations:</strong> - ROI: 1.5-3x investment over 5 years - Payback period: 2-4 years - Primary benefits: Lower operating costs (15-30%), increased uptime, improved safety</p>
+<p><strong>Generative AI for analysis:</strong> - ROI: Harder to quantify (time savings, better decisions) - Payback period: 3-6 months (relatively low investment) - Primary benefits: Faster insights, more thorough analysis, freed-up expert time</p>
+<p><strong>Warning signs of unrealistic ROI projections:</strong> - Vendor promises 10x ROI in year 1 - Benefits claimed without clear measurement methodology - ROI based entirely on “time saved” without productivity redeployment plan</p>
+</section>
+<section id="what-are-the-hidden-costs-we-should-budget-for" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-the-hidden-costs-we-should-budget-for">What are the hidden costs we should budget for?</h3>
+<p>Beyond the obvious software and hardware costs, budget for:</p>
+<p><strong>Data preparation:</strong> Often 30-40% of total project effort. Cleaning, standardizing, and integrating data sources.</p>
+<p><strong>Change management:</strong> 15-25% of project cost. Training people, adjusting processes, managing organizational resistance.</p>
+<p><strong>Integration with existing systems:</strong> Can double implementation costs if your systems don’t talk to each other easily.</p>
+<p><strong>Ongoing monitoring and tuning:</strong> AI isn’t “set and forget.” Budget 0.5-1 FTE for ongoing system monitoring once deployed.</p>
+<p><strong>Failed experiments:</strong> Not every AI project succeeds. Budget for 2-3 pilots with the expectation that 1-2 will deliver value worth scaling.</p>
+<p><strong>Organizational opportunity cost:</strong> Your best people will spend significant time on AI projects. What aren’t they doing instead?</p>
+<hr>
+</section>
+</section>
+<section id="technical-questions" class="level2">
+<h2 class="anchored" data-anchor-id="technical-questions">Technical Questions</h2>
+<section id="how-does-ai-actually-learn" class="level3">
+<h3 class="anchored" data-anchor-id="how-does-ai-actually-learn">How does AI actually “learn”?</h3>
+<p>Most practical AI uses <strong>supervised learning:</strong></p>
+<ol type="1">
+<li><p><strong>Training phase:</strong> The AI is shown many examples where you know the right answer. For predictive maintenance: “Here are 1000 equipment failures with the sensor data leading up to each failure.”</p></li>
+<li><p><strong>Pattern recognition:</strong> The AI identifies patterns. “When vibration increases by X% while temperature rises by Y°, failure occurs 85% of the time within 48 hours.”</p></li>
+<li><p><strong>Testing:</strong> The AI makes predictions on data it hasn’t seen before. You check accuracy.</p></li>
+<li><p><strong>Deployment:</strong> If accurate enough, the AI starts making predictions on real operational data.</p></li>
+<li><p><strong>Continuous learning:</strong> As new data comes in (including cases where the AI was wrong), the system can be retrained to improve.</p></li>
+</ol>
+<p><strong>Key insight:</strong> AI doesn’t “understand” anything. It finds statistical patterns. That’s why human oversight remains critical—the AI might find a spurious correlation that happens to work in training data but isn’t actually causal.</p>
+</section>
+<section id="what-data-do-we-need-to-make-ai-work" class="level3">
+<h3 class="anchored" data-anchor-id="what-data-do-we-need-to-make-ai-work">What data do we need to make AI work?</h3>
+<p><strong>Quality matters more than quantity.</strong> Good AI needs:</p>
+<p><strong>Sufficient volume:</strong> - For pattern recognition in sensor data: thousands of data points - For predictive models: hundreds of examples of the outcome you’re trying to predict - For LLMs: these are pre-trained, so you can start with smaller amounts of your specific data</p>
+<p><strong>Consistency:</strong> - Data collected the same way over time - Standardized formats and definitions - Minimal gaps or missing values</p>
+<p><strong>Relevance:</strong> - Data that actually relates to the outcome you care about - Features that an expert would consider meaningful</p>
+<p><strong>Example:</strong> For predicting haul truck engine failure, you need consistent sensor data (temperature, vibration, oil quality) collected at regular intervals, along with records of when failures actually occurred. 500 trucks × 6 months of data would be a good starting point.</p>
+</section>
+<section id="can-ai-work-with-legacy-systems-and-old-data" class="level3">
+<h3 class="anchored" data-anchor-id="can-ai-work-with-legacy-systems-and-old-data">Can AI work with legacy systems and old data?</h3>
+<p><strong>Short answer:</strong> Often yes, but with limitations.</p>
+<p><strong>Integration approaches:</strong> 1. <strong>API connections:</strong> If your legacy system has any kind of data export, AI can read it 2. <strong>Data extraction:</strong> Pull data into a modern database regularly, AI works from there 3. <strong>Screen scraping (last resort):</strong> AI can sometimes read data from old user interfaces 4. <strong>Manual bridging:</strong> For truly antiquated systems, you might need manual data extraction</p>
+<p><strong>Old data challenges:</strong> - Different measurement standards or units over time - Incomplete records or poor documentation - Systems that didn’t capture data AI would now find useful</p>
+<p><strong>Pragmatic approach:</strong> Start with whatever data you can access. If early results show promise, use that to justify infrastructure upgrades for better data access.</p>
+</section>
+<section id="how-accurate-does-ai-need-to-be-before-we-trust-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-accurate-does-ai-need-to-be-before-we-trust-it">How accurate does AI need to be before we trust it?</h3>
+<p><strong>There’s no universal threshold.</strong> It depends entirely on the stakes and the baseline.</p>
+<p><strong>Questions to ask:</strong></p>
+<ol type="1">
+<li><p><strong>What’s the current human accuracy?</strong> If geologists identify viable drill targets 60% of the time, and AI does it 65% of the time, that’s valuable even though it’s “only” 65%.</p></li>
+<li><p><strong>What’s the cost of false positives vs.&nbsp;false negatives?</strong> For safety alerts, you might accept 80% false alarms (false positives) to catch 95% of real hazards (minimize false negatives).</p></li>
+<li><p><strong>Can errors be caught by downstream processes?</strong> If AI generates a report that humans review, you can tolerate lower accuracy than if AI takes direct action.</p></li>
+</ol>
+<p><strong>Practical benchmarks:</strong> - <strong>Predictive maintenance:</strong> 70-80% accuracy is often good enough (much better than reactive maintenance) - <strong>Document analysis:</strong> 90%+ accuracy typically needed (humans won’t trust it otherwise) - <strong>Safety-critical alerts:</strong> 95%+ for detecting genuine hazards (but high false alarm rate might be acceptable)</p>
+<p><strong>Best practice:</strong> Start with human-in-the-loop oversight regardless of accuracy, then relax to human-on-the-loop only after consistent performance over months.</p>
+</section>
+<section id="what-happens-when-the-ai-encounters-something-its-never-seen-before" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-when-the-ai-encounters-something-its-never-seen-before">What happens when the AI encounters something it’s never seen before?</h3>
+<p>This is called <strong>out-of-distribution data</strong> and it’s a critical limitation of AI.</p>
+<p><strong>What good AI systems do:</strong> - Flag when they’re uncertain: “I’m only 40% confident in this prediction” - Alert humans: “This situation is outside my training data” - Fall back to safe defaults: “Stopping autonomous operation and requesting human operator”</p>
+<p><strong>What poorly designed systems do:</strong> - Make a confident prediction anyway (dangerous) - Fail silently without alerting anyone - Generate nonsensical outputs</p>
+<p><strong>Why this matters for governance:</strong> This is why Human-in-Command is critical. You must define what the AI should do when it’s unsure, and this requires human judgment about acceptable risk.</p>
+<p><strong>Mining example:</strong> An autonomous truck encountering unexpected equipment on a haul road should stop and alert a human operator, not try to navigate around it based on a “best guess.”</p>
+<hr>
+</section>
+</section>
+<section id="organizational-people" class="level2">
+<h2 class="anchored" data-anchor-id="organizational-people">Organizational &amp; People</h2>
+<section id="will-ai-eliminate-jobs-in-mining" class="level3">
+<h3 class="anchored" data-anchor-id="will-ai-eliminate-jobs-in-mining">Will AI eliminate jobs in mining?</h3>
+<p><strong>Evidence to date says: No, but jobs change significantly.</strong></p>
+<p><strong>What actually happens:</strong></p>
+<p><strong>Jobs that decrease:</strong> - Manual operators in autonomous systems (but note: many become remote operators) - Routine data entry and compilation - Some first-line maintenance roles (replaced by condition-based maintenance)</p>
+<p><strong>Jobs that increase or emerge:</strong> - Remote operation and monitoring roles - Data analysts and AI system managers - Advanced maintenance technicians (predictive/preventive focus) - Automation engineers and system integrators - Change management and training specialists</p>
+<p><strong>Jobs that transform:</strong> - Geologists spend less time on data compilation, more on interpretation - Mine managers focus more on strategy, less on routine operational decisions - Engineers work more on optimization and system design</p>
+<p><strong>Net employment impact:</strong> Rio Tinto and Fortescue, with extensive automation, still employ tens of thousands. But the skill profile shifted higher—more technical, more analytical, higher pay on average.</p>
+<p><strong>Critical factor:</strong> How well you manage workforce transition. Companies that invest in reskilling see less resistance and better outcomes.</p>
+</section>
+<section id="how-do-we-address-workforce-concerns-about-ai" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-address-workforce-concerns-about-ai">How do we address workforce concerns about AI?</h3>
+<p><strong>Be transparent and proactive:</strong></p>
+<ol type="1">
+<li><p><strong>Acknowledge the concern directly.</strong> Don’t dismiss fears. “I understand why AI raises concerns about job security.”</p></li>
+<li><p><strong>Show, don’t just tell.</strong> Pilot projects where people can see AI augmenting rather than replacing them are more convincing than any PowerPoint.</p></li>
+<li><p><strong>Involve workers in design.</strong> The people doing the job know where AI would actually help vs.&nbsp;where it would cause problems. Their input makes better systems.</p></li>
+<li><p><strong>Invest in transition.</strong> If someone’s role will change, provide training and a clear path to the new role. Don’t expect them to “figure it out.”</p></li>
+<li><p><strong>Focus on what AI can’t do.</strong> Emphasize judgment, relationships, creativity, complex problem-solving—distinctly human capabilities that become more valuable as AI handles routine tasks.</p></li>
+</ol>
+<p><strong>What NOT to do:</strong> - Claim “AI won’t change anything” (people won’t believe you) - Introduce AI secretly and spring it on workers - Automate first, figure out people impacts later</p>
+<p><strong>Example messaging:</strong> “AI will handle the repetitive data analysis so you can spend more time on the complex interpretations where your experience really matters. We’ll train you on working with the AI tools, and this will make you more valuable, not less.”</p>
+</section>
+<section id="who-should-lead-ai-initiatives-in-a-mining-company" class="level3">
+<h3 class="anchored" data-anchor-id="who-should-lead-ai-initiatives-in-a-mining-company">Who should lead AI initiatives in a mining company?</h3>
+<p><strong>Not your IT department alone.</strong> AI strategy is a <strong>business and operational challenge</strong> that happens to use technology.</p>
+<p><strong>Ideal structure:</strong></p>
+<p><strong>Executive sponsor:</strong> Senior operations or technical leader who: - Understands mining operations deeply - Has authority to make cross-functional decisions - Can secure budget and navigate politics - Doesn’t need to be technical, but must be curious and willing to learn</p>
+<p><strong>Working team:</strong> - <strong>Operations lead:</strong> Identifies problems worth solving and validates solutions - <strong>Technical lead:</strong> Understands AI capabilities and limitations (might be external initially) - <strong>Data/IT lead:</strong> Ensures data access and system integration - <strong>Change management lead:</strong> Handles organizational adoption</p>
+<p><strong>Governance committee:</strong> Cross-functional group meeting quarterly to: - Review AI portfolio and priorities - Set standards and boundaries - Resolve conflicts between departments - Own accountability for AI outcomes</p>
+<p><strong>Critical point:</strong> The person who understands the business problem must drive the project. The technologists support them, not the other way around.</p>
+</section>
+<section id="how-do-we-build-internal-ai-capability-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-build-internal-ai-capability-over-time">How do we build internal AI capability over time?</h3>
+<p><strong>Phase 1 (Months 0-12): Learn by doing with external help</strong> - Partner with vendors and consultants for first 2-3 projects - Assign your best people to work alongside them (even if it hurts short-term) - Focus on learning, not just delivery</p>
+<p><strong>Phase 2 (Year 2): Develop internal champions</strong> - Send 2-3 people for formal AI training/courses - Start managing vendor relationships more actively - Begin doing simpler customizations internally</p>
+<p><strong>Phase 3 (Year 3+): Build internal team</strong> - Hire 1-2 data scientists or AI engineers - Develop centers of excellence - Internal team leads projects, vendors provide specialized support</p>
+<p><strong>Investment approach:</strong> - Year 1: 80% external, 20% internal - Year 2: 60% external, 40% internal - Year 3+: 40% external, 60% internal</p>
+<p><strong>Don’t try to build Google inside your mining company.</strong> You need enough internal capability to be a smart buyer and to customize solutions to your context, not to compete with AI companies.</p>
+<hr>
+</section>
+</section>
+<section id="mining-specific-applications" class="level2">
+<h2 class="anchored" data-anchor-id="mining-specific-applications">Mining-Specific Applications</h2>
+<section id="which-ai-applications-are-most-mature-and-proven-in-mining" class="level3">
+<h3 class="anchored" data-anchor-id="which-ai-applications-are-most-mature-and-proven-in-mining">Which AI applications are most mature and proven in mining?</h3>
+<p><strong>High maturity (widely deployed, proven ROI):</strong> - Autonomous haul trucks (Pilbara iron ore operations) - Predictive maintenance on mobile equipment - Ore sorting and grade control systems - Fleet optimization and dispatch - Basic anomaly detection in sensor data</p>
+<p><strong>Medium maturity (successful pilots, early commercial deployment):</strong> - AI-assisted geological interpretation and targeting - Ventilation optimization (underground) - Blast optimization - Safety monitoring (fatigue detection, proximity alerts) - Generative AI for operational reporting</p>
+<p><strong>Early stage (promising research, limited deployment):</strong> - Fully autonomous drilling - AI-driven mine planning and optimization - Complex multi-agent coordination - Metallurgical process optimization using AI - Automated compliance and regulatory reporting</p>
+<p><strong>Recommended strategy:</strong> Start with high-maturity applications where the technology risk is low. Use success to build capability and credibility for medium-maturity applications.</p>
+</section>
+<section id="can-ai-help-with-exploration-and-finding-new-deposits" class="level3">
+<h3 class="anchored" data-anchor-id="can-ai-help-with-exploration-and-finding-new-deposits">Can AI help with exploration and finding new deposits?</h3>
+<p>Yes, and this is one of AI’s most exciting applications in mining.</p>
+<p><strong>What AI is good at:</strong> - Analyzing massive geochemical, geophysical, and geological datasets simultaneously - Identifying subtle patterns that indicate mineralization - Comparing your site data against global deposit databases - Rapidly screening large areas to prioritize targets</p>
+<p><strong>Real example:</strong> KoBold Metals used AI to analyze regional data in Zambia and identified a major copper deposit announced in 2023. The AI found patterns across multiple data types that pointed to a high-probability target.</p>
+<p><strong>What AI can’t replace:</strong> - Geological judgment and interpretation - Field verification and core logging - Understanding structural and tectonic context - Making the final decision on where to drill</p>
+<p><strong>Best practice:</strong> AI does the initial data analysis and ranking (human-on-the-loop), geologists review top targets and add context (human-in-the-loop), leadership decides drill program based on strategy and budget (human-in-command).</p>
+<p><strong>Limitations:</strong> AI can only find deposits similar to ones in its training data. It’s less useful for completely novel deposit types.</p>
+</section>
+<section id="how-can-ai-improve-safety-in-mining-operations" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-ai-improve-safety-in-mining-operations">How can AI improve safety in mining operations?</h3>
+<p><strong>Current applications:</strong></p>
+<p><strong>Fatigue monitoring:</strong> - Cameras in haul truck cabs detect eye closure and head nodding - System alerts operator and supervisor if fatigue detected - Human-on-the-loop: AI monitors continuously, humans intervene</p>
+<p><strong>Proximity detection:</strong> - AI combines GPS, radar, and cameras to detect potential collisions - Warnings to operators or automatic speed reduction - Prevents interactions between light vehicles and heavy equipment</p>
+<p><strong>Hazard identification:</strong> - AI analyzes video feeds for unsafe behaviors or conditions - Computer vision identifies missing PPE, unsafe acts, hazardous conditions - Alerts supervisors to intervene</p>
+<p><strong>Predictive geotechnical monitoring:</strong> - AI analyzes slope stability data to detect early warning signs - Flags areas requiring evacuation or additional monitoring - Critical application of human-on-the-loop with clear escalation protocols</p>
+<p><strong>Incident analysis:</strong> - LLMs analyze incident reports to identify recurring themes - Spots patterns invisible to humans reading individual reports - Enables proactive intervention on trending issues</p>
+<p><strong>Key principle:</strong> AI enhances safety by providing continuous monitoring at scale, but humans must remain accountable for safety decisions.</p>
+</section>
+<section id="can-ai-optimize-blast-designs" class="level3">
+<h3 class="anchored" data-anchor-id="can-ai-optimize-blast-designs">Can AI optimize blast designs?</h3>
+<p>Yes, but this is a complex application requiring careful oversight.</p>
+<p><strong>What AI can do:</strong> - Analyze historical blast performance data - Optimize burden and spacing based on rock properties - Predict fragmentation outcomes - Suggest drill patterns for specific geological conditions - Learn from post-blast fragmentation analysis</p>
+<p><strong>Where humans must stay involved:</strong> - Final approval of blast designs (human-in-the-loop) - Adjustments based on current ground conditions - Safety reviews and regulatory compliance - Handling unexpected geological features - Defining constraints (vibration limits, flyrock risk)</p>
+<p><strong>Maturity level:</strong> Still emerging. Several vendors offer AI-assisted blast design, but fully autonomous blast design is not widely deployed.</p>
+<p><strong>Recommended approach:</strong> Use AI to generate initial designs and predict outcomes, but require shot-firer review and approval before execution. This is a clear human-in-the-loop application.</p>
+<hr>
+</section>
+</section>
+<section id="risk-governance" class="level2">
+<h2 class="anchored" data-anchor-id="risk-governance">Risk &amp; Governance</h2>
+<section id="what-are-the-biggest-risks-of-ai-in-mining-operations" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-the-biggest-risks-of-ai-in-mining-operations">What are the biggest risks of AI in mining operations?</h3>
+<p><strong>Technical risks:</strong> - AI making wrong predictions or decisions (false positives/negatives) - Systems failing or behaving unpredictably in edge cases - Integration failures causing operational disruptions - Data quality issues leading to poor AI performance</p>
+<p><strong>Operational risks:</strong> - Over-reliance on AI eroding human skills and judgment - Alert fatigue if AI generates too many false alarms - Automation complacency (humans stop paying attention) - Systems optimizing for the wrong objectives</p>
+<p><strong>Safety risks:</strong> - Autonomous equipment encountering unexpected situations - Safety-critical systems failing without adequate backup - Unclear accountability when AI is involved in incidents - Inadequate testing before deployment</p>
+<p><strong>Business risks:</strong> - Failed implementations damaging credibility of future AI projects - Vendor lock-in to proprietary systems - Competitive disadvantage if competitors adopt AI faster - Regulatory or legal challenges</p>
+<p><strong>Mitigation:</strong> The three-level oversight framework addresses most of these risks by ensuring appropriate human involvement and clear accountability.</p>
+</section>
+<section id="how-do-we-ensure-accountability-when-ai-is-involved" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-ensure-accountability-when-ai-is-involved">How do we ensure accountability when AI is involved?</h3>
+<p><strong>Golden rule: Accountability always remains human.</strong></p>
+<p><strong>Clear accountability structure:</strong></p>
+<ol type="1">
+<li><p><strong>Human-in-Command level:</strong> Executive leadership owns the decision to deploy AI for specific purposes and sets boundaries. If the AI application causes harm, they’re accountable for choosing to use AI this way.</p></li>
+<li><p><strong>Human-in-the-Loop level:</strong> The human making the final decision is accountable for that decision, even if AI influenced it. “The AI recommended it” is not an acceptable excuse.</p></li>
+<li><p><strong>Human-on-the-Loop level:</strong> The human monitoring the system is accountable for intervening when needed. If the AI takes a wrong action and the monitor didn’t catch it, that’s a monitoring failure, not an AI failure.</p></li>
+</ol>
+<p><strong>Documentation is critical:</strong> - Who decided to use AI for this application and why? - What oversight level was chosen and why? - Who is responsible for monitoring? - What are the escalation procedures? - How are AI decisions logged and auditable?</p>
+<p><strong>Example:</strong> If an autonomous truck is involved in an incident, the accountability chain is: operator monitoring (if any) → autonomous systems manager → operations manager who approved autonomous operation in that area → executive who approved autonomous program. The AI isn’t accountable; the humans who deployed and oversaw it are.</p>
+</section>
+<section id="do-we-need-an-ai-ethics-committee-or-governance-board" class="level3">
+<h3 class="anchored" data-anchor-id="do-we-need-an-ai-ethics-committee-or-governance-board">Do we need an AI ethics committee or governance board?</h3>
+<p><strong>Yes, especially as you scale beyond 2-3 AI applications.</strong></p>
+<p><strong>Purpose of governance body:</strong> - Set organization-wide AI policies and standards - Review and approve high-risk AI applications - Ensure consistency across departments - Own the “Human-in-Command” role for enterprise AI strategy - Provide forum for escalating AI-related concerns</p>
+<p><strong>Composition (6-10 people):</strong> - Executive sponsor (chair) - Operations leaders from major departments - Legal/compliance representative - IT/technology leader - Safety manager - HR/workforce representative - External advisor (optional)</p>
+<p><strong>Meeting cadence:</strong> - Quarterly for mature programs - Monthly during early scaling phase - Ad-hoc for major decisions or incidents</p>
+<p><strong>Key policies to establish:</strong> - What types of decisions can/cannot use AI - Required oversight levels for different applications - Data privacy and security standards - Vendor evaluation criteria - Workforce impact assessment requirements - Incident response procedures</p>
+<p><strong>Don’t create bureaucracy:</strong> The governance body sets policy, not reviews every AI decision. Day-to-day decisions stay with operations.</p>
+</section>
+<section id="what-regulations-apply-to-ai-in-mining" class="level3">
+<h3 class="anchored" data-anchor-id="what-regulations-apply-to-ai-in-mining">What regulations apply to AI in mining?</h3>
+<p><strong>Currently (2025):</strong> Mining-specific AI regulations are limited. Most regulation is indirect:</p>
+<p><strong>Existing frameworks that apply:</strong> - <strong>Mine safety regulations:</strong> Any AI system affecting safety must meet existing safety case requirements - <strong>Environmental regulations:</strong> If AI controls environmental systems (water, emissions), standard regulations apply - <strong>Employment law:</strong> AI in hiring or performance management must comply with discrimination laws - <strong>Privacy law:</strong> AI using personal data (fatigue monitoring, location tracking) must comply with privacy regulations - <strong>Autonomous vehicle regulations:</strong> Vary by jurisdiction for on-road vs.&nbsp;off-road autonomous equipment</p>
+<p><strong>Emerging regulations to watch:</strong> - <strong>EU AI Act:</strong> Categorizes AI by risk level, may affect operations in Europe - <strong>Industry standards:</strong> ICMM and similar bodies developing AI guidance for mining - <strong>Insurance requirements:</strong> Insurers starting to require specific AI governance for coverage</p>
+<p><strong>Best practice:</strong> Don’t wait for regulation. Establish governance proactively. Companies with mature AI governance will find compliance easier as regulations emerge.</p>
+</section>
+<section id="how-do-we-protect-against-ai-bias" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-protect-against-ai-bias">How do we protect against AI bias?</h3>
+<p><strong>Types of bias to watch for:</strong></p>
+<p><strong>Historical bias:</strong> AI learns from past data. If past decisions were biased, AI perpetuates them. - <em>Example:</em> If your hiring history favored certain demographics, AI trained on this data will do the same</p>
+<p><strong>Measurement bias:</strong> AI optimizes what you measure, which may not capture what you care about. - <em>Example:</em> Optimizing for production tonnage might sacrifice safety or equipment longevity</p>
+<p><strong>Representation bias:</strong> If training data doesn’t represent all situations, AI performs poorly on underrepresented cases. - <em>Example:</em> Predictive maintenance trained only on data from one climate may fail in different conditions</p>
+<p><strong>Mitigation strategies:</strong></p>
+<ol type="1">
+<li><strong>Diverse training data:</strong> Ensure data represents all conditions, people, and situations</li>
+<li><strong>Regular auditing:</strong> Check AI outputs for patterns of bias, especially in people-affecting decisions</li>
+<li><strong>Human oversight:</strong> Maintain human-in-the-loop for decisions that could be discriminatory</li>
+<li><strong>Transparency:</strong> Make AI decision factors visible and explainable</li>
+<li><strong>Feedback mechanisms:</strong> Enable people to challenge AI decisions they believe are biased</li>
+</ol>
+<p><strong>Remember:</strong> AI doesn’t create bias, it reflects and amplifies bias in data and processes. Fixing AI bias often means fixing human bias first.</p>
+<hr>
+</section>
+</section>
+<section id="choosing-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-solutions">Choosing Solutions</h2>
+<section id="how-do-we-evaluate-ai-vendors-and-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-evaluate-ai-vendors-and-solutions">How do we evaluate AI vendors and solutions?</h3>
+<p><strong>Key evaluation criteria:</strong></p>
+<p><strong>1. Proof of value (most important)</strong> - Do they have case studies in similar operations? - Can they demonstrate the system working? - Will they agree to a paid pilot with success metrics? - What are realistic ROI expectations?</p>
+<p><strong>2. Technology maturity</strong> - How long has this solution been in production? - How many clients are using it? - What’s the typical implementation timeline? - What accuracy/reliability can we expect?</p>
+<p><strong>3. Integration and data requirements</strong> - What data does it need, and do we have it? - Can it integrate with our existing systems? - What’s the data preparation effort? - Does it require ongoing data feeds or periodic updates?</p>
+<p><strong>4. Oversight and control</strong> - Can we set boundaries and constraints? - Does it provide confidence/uncertainty estimates? - Can we override or intervene? - How transparent are its decisions?</p>
+<p><strong>5. Support and partnership</strong> - What implementation support is included? - What are ongoing support and maintenance costs? - Do they provide training? - What’s their track record of long-term client relationships?</p>
+<p><strong>6. Commercial terms</strong> - Pricing model (subscription, license, usage-based) - Lock-in risk (can we switch vendors if needed?) - Data ownership (do we own our data and models?) - Scalability (cost to expand beyond pilot)</p>
+<p><strong>Red flags:</strong> - Vendor won’t agree to measurable success criteria - “Black box” with no visibility into how it works - Requires extensive custom development before seeing results - No references from similar operations - Promises that sound too good to be true</p>
+<p><strong>Best practice:</strong> Run competitive pilots. Test 2-3 vendors on a small-scale problem with clear success metrics before committing to large-scale deployment.</p>
+</section>
+<section id="should-we-use-open-source-ai-or-commercial-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="should-we-use-open-source-ai-or-commercial-solutions">Should we use open-source AI or commercial solutions?</h3>
+<p><strong>Commercial solutions:</strong> <strong>Pros:</strong> - Faster implementation with vendor support - Pre-built integrations and user interfaces - Ongoing maintenance and updates included - Clear accountability (you can blame the vendor)</p>
+<p><strong>Cons:</strong> - Higher ongoing costs - Potential vendor lock-in - Less customization flexibility - Dependent on vendor’s roadmap</p>
+<p><strong>Open-source AI:</strong> <strong>Pros:</strong> - Lower licensing costs (but implementation costs can be higher) - Full customization capability - No vendor lock-in - Control over your roadmap</p>
+<p><strong>Cons:</strong> - Requires internal technical expertise - You own all implementation and maintenance - No one to call when things break - May lack industry-specific features</p>
+<p><strong>Recommended approach for mining:</strong> - <strong>Start with commercial solutions</strong> for your first 2-3 AI applications (reduce risk, learn faster) - <strong>Consider open-source</strong> once you have internal capability and clear requirements - <strong>Hybrid approach:</strong> Use commercial platforms with open-source models (e.g., using LLMs like Llama deployed on your infrastructure)</p>
+<p><strong>Exception:</strong> If you have a very specific, proprietary use case that vendors don’t address, custom development with open-source tools might be your only option.</p>
+</section>
+<section id="what-about-using-llms-like-chatgpt-in-our-operations" class="level3">
+<h3 class="anchored" data-anchor-id="what-about-using-llms-like-chatgpt-in-our-operations">What about using LLMs like ChatGPT in our operations?</h3>
+<p><strong>Consumer LLMs (ChatGPT, Claude, etc.) - Good for:</strong> - Quick analysis of public information - Drafting routine documents - Brainstorming and ideation - Learning and education - Proof-of-concept testing</p>
+<p><strong>Critical limitations for operations:</strong> - <strong>Data privacy:</strong> Your data goes to the vendor and may be used for training - <strong>Security:</strong> Not suitable for confidential or sensitive information - <strong>Accuracy:</strong> Can “hallucinate” or make confident mistakes - <strong>Compliance:</strong> May not meet your regulatory or audit requirements - <strong>Reliability:</strong> Consumer services have no uptime guarantees</p>
+<p><strong>Enterprise alternatives:</strong> - <strong>ChatGPT Enterprise / Claude for Enterprise:</strong> Business versions with data privacy, no training on your data, admin controls - <strong>Microsoft Azure OpenAI:</strong> Deploy OpenAI models in your own secure environment - <strong>On-premise LLMs:</strong> Deploy open-source models (Llama, Mistral) on your infrastructure</p>
+<p><strong>Recommended approach:</strong> 1. <strong>Experiment freely</strong> with consumer LLMs for non-sensitive use cases 2. <strong>Upgrade to enterprise</strong> if you find valuable applications 3. <strong>Deploy on-premise</strong> for truly sensitive applications (geological interpretations, financial data)</p>
+<p><strong>Never put in consumer LLMs:</strong> - Proprietary geological data - Financial information - Personal employee data - Upcoming M&amp;A or business strategy - Anything covered by confidentiality agreements</p>
+</section>
+<section id="how-do-we-know-if-an-ai-solution-is-good-enough" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-know-if-an-ai-solution-is-good-enough">How do we know if an AI solution is “good enough”?</h3>
+<p><strong>Define “good enough” before you start:</strong></p>
+<p><strong>Benchmark against current state:</strong> - If current process is 70% accurate, AI at 75% is valuable - If current process costs <span class="math inline">\(X, AI must cost &lt;\)</span>X or deliver &gt;$X in value - If current process takes 2 days, AI delivering same quality in 2 hours is valuable</p>
+<p><strong>Consider the full picture:</strong> - Accuracy alone isn’t enough; also consider speed, cost, scalability - 80% accuracy with instant results might be better than 95% accuracy taking a week - Lower accuracy with good uncertainty estimates can be valuable (AI says “I’m only 60% confident” lets you decide)</p>
+<p><strong>Set minimum viable thresholds:</strong> - Below what accuracy is the system useless or dangerous? - What false alarm rate makes the system more annoying than helpful? - What response time is required for the application to work?</p>
+<p><strong>Pilot testing approach:</strong> 1. <strong>Baseline:</strong> Measure current performance quantitatively 2. <strong>Pilot:</strong> Run AI system alongside current process for 2-3 months 3. <strong>Compare:</strong> Is AI measurably better? If yes, by how much? 4. <strong>Decide:</strong> Is the improvement worth the cost and change?</p>
+<p><strong>Example decision:</strong> - Current: Geologists identify viable drill targets 65% of the time, takes 3 weeks - AI system: Identifies targets 68% accurately, takes 3 days - Decision: Valuable. Slightly better accuracy, dramatically faster, frees geologist time for other work. Worth implementing.</p>
+<hr>
+</section>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<section id="where-can-i-learn-more-about-ai-in-mining" class="level3">
+<h3 class="anchored" data-anchor-id="where-can-i-learn-more-about-ai-in-mining">Where can I learn more about AI in mining?</h3>
+<p><strong>Industry Reports:</strong> - Deloitte Insights: “Mining and Metals AI Revolution” series - McKinsey: “The Future of Mining” reports - Mining3 research publications - ICMM (International Council on Mining &amp; Metals) technology guides</p>
+<p><strong>Academic Sources:</strong> - Mining Engineering journals (SME, CIM) - Papers on AI applications in extractive industries - University mining research centers (JKMRC, Luleå, McGill)</p>
+<p><strong>Case Studies:</strong> - Rio Tinto automation reports (publicly available) - Fortescue Metals autonomous operations - KoBold Metals exploration AI - Vendor case study libraries (Komatsu, Hexagon, Wenco)</p>
+<p><strong>Courses and Training:</strong> - Curtin University Executive Education: “AI in Leadership &amp; Project Management” and “AI to Drive Business Innovation” - Mining industry conferences (IMARC, MINExpo, etc.) - Online platforms (Coursera, edX) for technical foundations</p>
+</section>
+<section id="how-do-i-stay-current-on-ai-developments" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-stay-current-on-ai-developments">How do I stay current on AI developments?</h3>
+<p><strong>Subscribe to:</strong> - Mining technology newsletters (e.g., MINING.COM Technology) - AI in industry publications (MIT Technology Review, AI Business) - Vendor blogs and webinars - LinkedIn groups focused on mining innovation</p>
+<p><strong>Attend:</strong> - Mining technology conferences (at least annually) - Vendor demonstration days - Industry workshops and webinars</p>
+<p><strong>Network:</strong> - Join mining technology peer groups - Connect with colleagues at other operations - Engage with university research groups</p>
+<p><strong>Key insight:</strong> AI is evolving rapidly. What’s cutting-edge today will be standard practice in 2-3 years. Continuous learning is essential.</p>
+</section>
+<section id="can-we-get-help-implementing-ai-in-our-operation" class="level3">
+<h3 class="anchored" data-anchor-id="can-we-get-help-implementing-ai-in-our-operation">Can we get help implementing AI in our operation?</h3>
+<p><strong>Yes. Multiple pathways:</strong></p>
+<p><strong>1. Vendor-led implementation:</strong> - AI software vendors typically offer implementation services - They handle setup, training, initial tuning - Good for first projects where you’re learning</p>
+<p><strong>2. Consulting firms:</strong> - Major consultancies (Deloitte, McKinsey, etc.) have mining AI practices - Specialized mining consultants partner with AI vendors - Good for strategy and change management</p>
+<p><strong>3. Research institutions:</strong> - University mining departments often do applied research projects - Can be more affordable, though slower - Good for novel applications without commercial solutions</p>
+<p><strong>4. System integrators:</strong> - Engineering firms specializing in mining automation - Handle integration of AI with existing systems - Good for complex technical implementations</p>
+<p><strong>5. Training and capability building:</strong> - Executive education courses (like Curtin’s offerings) - Internal capability development programs - Learning by doing with expert coaching</p>
+<p><strong>Recommended path:</strong> Start with vendor-led implementation for your first project, but assign your best people to work alongside them. Use early projects to build internal knowledge. Consider executive training to develop strategic AI leadership.</p>
+<hr>
+</section>
+</section>
+<section id="course-information" class="level2">
+<h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
+<section id="how-do-the-executive-courses-relate-to-this-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-the-executive-courses-relate-to-this-presentation">How do the executive courses relate to this presentation?</h3>
+<p>This presentation introduced the <strong>framework</strong>—the three levels of human oversight and how to think about AI strategically.</p>
+<p>The <strong>courses go much deeper:</strong></p>
+<p><strong>“AI in Leadership and Project Management”</strong> is for people who will lead AI initiatives: - How to identify high-value AI opportunities in your operations - Building and managing cross-functional AI project teams - Taking AI from pilot to production deployment - Managing organizational change around AI - Real project work on your actual challenges</p>
+<p><strong>“AI to Drive Business Innovation”</strong> is for strategic thinking: - Evaluating emerging AI technologies (what’s real vs.&nbsp;hype) - Where AI creates competitive advantage in mining - Building compelling business cases for AI investment - Strategic frameworks for AI-driven transformation - Industry benchmarking and best practices</p>
+<p><strong>Both courses:</strong> - Are hands-on and practical (not theoretical) - Use mining-specific examples and case studies - Include working sessions on your real challenges - Provide frameworks you can apply immediately - Connect you with peers facing similar challenges</p>
+</section>
+<section id="who-should-attend-each-course" class="level3">
+<h3 class="anchored" data-anchor-id="who-should-attend-each-course">Who should attend each course?</h3>
+<p><strong>“AI in Leadership and Project Management” is ideal for:</strong> - Mine managers and superintendents - Department heads (geology, maintenance, operations) - Technical services managers - Project managers assigned to AI initiatives - Anyone who will champion and lead AI projects</p>
+<p><strong>“AI to Drive Business Innovation” is ideal for:</strong> - Senior executives and general managers - Strategic planning roles - Business development leaders - Innovation and technology managers - Anyone setting direction for AI strategy</p>
+<p><strong>Can you take both?</strong> Yes, and they complement each other. Leadership course is tactical (how to execute), Innovation course is strategic (what to execute).</p>
+</section>
+<section id="what-will-i-be-able-to-do-after-completing-a-course" class="level3">
+<h3 class="anchored" data-anchor-id="what-will-i-be-able-to-do-after-completing-a-course">What will I be able to do after completing a course?</h3>
+<p><strong>After “AI in Leadership and Project Management”:</strong> - Identify and prioritize AI opportunities in your area - Frame business problems as AI projects with clear success criteria - Build project teams and manage AI implementation - Navigate vendor relationships and solution evaluation - Design appropriate human oversight for different AI applications - Manage organizational change and address workforce concerns</p>
+<p><strong>After “AI to Drive Business Innovation”:</strong> - Distinguish AI hype from genuine opportunities - Evaluate emerging AI technologies for your context - Build business cases that secure executive buy-in - Develop multi-year AI roadmaps for your organization - Benchmark against industry leaders - Position your operation for AI-driven competitive advantage</p>
+<p><strong>Both courses emphasize:</strong> - Practical application over theory - Mining-specific examples and challenges - Frameworks you can use Monday morning - Connection with peers for ongoing learning</p>
+</section>
+<section id="how-do-i-register-or-get-more-information" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-register-or-get-more-information">How do I register or get more information?</h3>
+<p><strong>Visit:</strong> [Course registration website URL]</p>
+<p><strong>Contact:</strong> [Curtin Executive Education contact details]</p>
+<p><strong>Course dates:</strong> - October-November 2025 (specific dates on website)</p>
+<p><strong>Format:</strong> - In-person intensive workshops - Optional online pre-work - Post-course resources and community access</p>
+<p><strong>Investment:</strong> - [Course fee information] - Group discounts available for multiple attendees from same organization</p>
+<p><strong>Questions?</strong> Email: [contact email] Phone: [contact phone]</p>
+<hr>
+</section>
+</section>
+<section id="still-have-questions" class="level2">
+<h2 class="anchored" data-anchor-id="still-have-questions">Still Have Questions?</h2>
+<p>If your question isn’t answered here, we’d love to hear from you:</p>
+<p><strong>Email:</strong> [Your email]</p>
+<p><strong>Phone:</strong> [Your phone]</p>
+<p><strong>Website:</strong> [Support website URL]</p>
+<p><strong>LinkedIn:</strong> [Your LinkedIn profile]</p>
+<hr>
+<p><strong>Download the presentation slides:</strong> [Link to PDF]</p>
+<p><strong>View case study references:</strong> [Link to references page]</p>
+<p><strong>Take the AI readiness assessment:</strong> [Link to assessment tool]</p>
+<hr>
+<p><em>This FAQ document accompanies the “Humans in the Loop: Why Your AI Needs a Co-Pilot” presentation delivered as part of Curtin University Executive Education’s Lunch &amp; Learn series.</em></p>
+<p><em>Last updated: [Date]</em></p>
+<hr>
+</section>
+<section id="document-map" class="level2">
+<h2 class="anchored" data-anchor-id="document-map">Document Map</h2>
+<p><strong>Quick Navigation:</strong></p>
+<p><strong>New to AI?</strong> Start with <a href="#understanding-ai-basics">Understanding AI Basics</a></p>
+<p><strong>Ready to implement?</strong> Jump to <a href="#implementation--getting-started">Implementation &amp; Getting Started</a></p>
+<p><strong>Concerned about costs?</strong> Check <a href="#cost--roi">Cost &amp; ROI</a></p>
+<p><strong>Technical questions?</strong> See <a href="#technical-questions">Technical Questions</a></p>
+<p><strong>Worried about people impacts?</strong> Read <a href="#organizational--people">Organizational &amp; People</a></p>
+<p><strong>Mining-specific applications?</strong> Go to <a href="#mining-specific-applications">Mining-Specific Applications</a></p>
+<p><strong>Governance and risk?</strong> Review <a href="#risk--governance">Risk &amp; Governance</a></p>
+<p><strong>Evaluating solutions?</strong> See <a href="#choosing-solutions">Choosing Solutions</a></p>
+</section>
+<section id="want-formal-training-check-course-information" class="level2">
+<h2 class="anchored" data-anchor-id="want-formal-training-check-course-information"><strong>Want formal training?</strong> Check <a href="#course-information">Course Information</a></h2>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
