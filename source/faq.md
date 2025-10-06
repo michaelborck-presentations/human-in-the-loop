@@ -51,13 +51,13 @@ LLMs are AI systems trained on massive amounts of text data that can understand 
 
 **What makes them revolutionary:** They can read unstructured text (reports, emails, procedures), extract key information, answer questions in plain English, and generate coherent summaries or analyses.
 
-**In mining contexts:** LLMs can analyze shift reports, summarize safety incidents, answer questions about geological data, draft routine documents, and help non-technical managers explore data using natural conversation rather than SQL queries or specialized software.
+**In mining contexts:** LLMs can analyse shift reports, summarize safety incidents, answer questions about geological data, draft routine documents, and help non-technical managers explore data using natural conversation rather than SQL queries or specialized software.
 
 ### What are "agentic workflows" or "AI agents"?
 
 An **agent** is an AI system that can take actions, not just make predictions or recommendations. 
 
-A **non-agentic AI** might analyze sensor data and display "High vibration detected on Truck 47."
+A **non-agentic AI** might analyse sensor data and display "High vibration detected on Truck 47."
 
 An **agentic AI** might detect the vibration, check the maintenance schedule, identify that this truck is due for service anyway, find an available maintenance slot tomorrow afternoon, and automatically generate a work order.
 
@@ -160,7 +160,7 @@ Start with the **3-question test:**
 
 ### What if our data is messy or siloed across multiple systems?
 
-This is the **#1 barrier** to AI adoption, and almost every organization faces it.
+This is the **#1 barrier** to AI adoption, and almost every organisation faces it.
 
 **Don't wait for perfect data.** Here's the pragmatic approach:
 
@@ -176,7 +176,7 @@ This is the **#1 barrier** to AI adoption, and almost every organization faces i
 
 **Rough timelines by complexity:**
 
-**Simple pilot (e.g., LLM analyzing shift reports):**
+**Simple pilot (e.g., LLM analysing shift reports):**
 - 1-2 months for setup and testing
 - Another 1-2 months to validate accuracy
 - Total: 2-4 months to prove concept
@@ -193,7 +193,7 @@ This is the **#1 barrier** to AI adoption, and almost every organization faces i
 - 12-24 months for full rollout
 - Total: 2-4 years to full deployment
 
-**Golden rule:** Double your initial estimate. AI projects almost always take longer than expected, but usually because of organizational and data challenges, not technology limitations.
+**Golden rule:** Double your initial estimate. AI projects almost always take longer than expected, but usually because of organisational and data challenges, not technology limitations.
 
 ### Should we build custom AI or buy off-the-shelf solutions?
 
@@ -347,7 +347,7 @@ Most practical AI uses **supervised learning:**
 
 1. **What's the current human accuracy?** If geologists identify viable drill targets 60% of the time, and AI does it 65% of the time, that's valuable even though it's "only" 65%.
 
-2. **What's the cost of false positives vs. false negatives?** For safety alerts, you might accept 80% false alarms (false positives) to catch 95% of real hazards (minimize false negatives).
+2. **What's the cost of false positives vs. false negatives?** For safety alerts, you might accept 80% false alarms (false positives) to catch 95% of real hazards (minimise false negatives).
 
 3. **Can errors be caught by downstream processes?** If AI generates a report that humans review, you can tolerate lower accuracy than if AI takes direct action.
 
@@ -512,12 +512,12 @@ This is called **out-of-distribution data** and it's a critical limitation of AI
 Yes, and this is one of AI's most exciting applications in mining.
 
 **What AI is good at:**
-- Analyzing massive geochemical, geophysical, and geological datasets simultaneously
+- Analysing massive geochemical, geophysical, and geological datasets simultaneously
 - Identifying subtle patterns that indicate mineralization
 - Comparing your site data against global deposit databases
 - Rapidly screening large areas to prioritize targets
 
-**Real example:** KoBold Metals used AI to analyze regional data in Zambia and identified a major copper deposit announced in 2023. The AI found patterns across multiple data types that pointed to a high-probability target.
+**Real example:** KoBold Metals used AI to analyse regional data in Zambia and identified a major copper deposit announced in 2023. The AI found patterns across multiple data types that pointed to a high-probability target.
 
 **What AI can't replace:**
 - Geological judgment and interpretation
@@ -544,7 +544,7 @@ Yes, and this is one of AI's most exciting applications in mining.
 - Prevents interactions between light vehicles and heavy equipment
 
 **Hazard identification:**
-- AI analyzes video feeds for unsafe behaviors or conditions
+- AI analyzes video feeds for unsafe behaviours or conditions
 - Computer vision identifies missing PPE, unsafe acts, hazardous conditions
 - Alerts supervisors to intervene
 
@@ -554,7 +554,7 @@ Yes, and this is one of AI's most exciting applications in mining.
 - Critical application of human-on-the-loop with clear escalation protocols
 
 **Incident analysis:**
-- LLMs analyze incident reports to identify recurring themes
+- LLMs analyse incident reports to identify recurring themes
 - Spots patterns invisible to humans reading individual reports
 - Enables proactive intervention on trending issues
 
@@ -565,7 +565,7 @@ Yes, and this is one of AI's most exciting applications in mining.
 Yes, but this is a complex application requiring careful oversight.
 
 **What AI can do:**
-- Analyze historical blast performance data
+- Analyse historical blast performance data
 - Optimize burden and spacing based on rock properties
 - Predict fragmentation outcomes
 - Suggest drill patterns for specific geological conditions
@@ -955,7 +955,7 @@ The **courses go much deeper:**
 - How to identify high-value AI opportunities in your operations
 - Building and managing cross-functional AI project teams
 - Taking AI from pilot to production deployment
-- Managing organizational change around AI
+- Managing organisational change around AI
 - Real project work on your actual challenges
 
 **"AI to Drive Business Innovation"** is for strategic thinking:
@@ -998,13 +998,13 @@ The **courses go much deeper:**
 - Build project teams and manage AI implementation
 - Navigate vendor relationships and solution evaluation
 - Design appropriate human oversight for different AI applications
-- Manage organizational change and address workforce concerns
+- Manage organisational change and address workforce concerns
 
 **After "AI to Drive Business Innovation":**
 - Distinguish AI hype from genuine opportunities
 - Evaluate emerging AI technologies for your context
 - Build business cases that secure executive buy-in
-- Develop multi-year AI roadmaps for your organization
+- Develop multi-year AI roadmaps for your organisation
 - Benchmark against industry leaders
 - Position your operation for AI-driven competitive advantage
 
@@ -1030,7 +1030,7 @@ The **courses go much deeper:**
 
 **Investment:**
 - [Course fee information]
-- Group discounts available for multiple attendees from same organization
+- Group discounts available for multiple attendees from same organisation
 
 **Questions?**
 Email: [contact email]
@@ -1078,7 +1078,7 @@ If your question isn't answered here, we'd love to hear from you:
 
 **Technical questions?** See [Technical Questions](#technical-questions)
 
-**Worried about people impacts?** Read [Organizational & People](#organizational--people)
+**Worried about people impacts?** Read [Organizational & People](#organisational--people)
 
 **Mining-specific applications?** Go to [Mining-Specific Applications](#mining-specific-applications)
 

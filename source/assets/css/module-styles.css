@@ -1,0 +1,363 @@
+/* ISYS6018 Module Styles - Week 08: Data Protection */
+
+/* CSS Variables for consistent theming */
+:root {
+    --primary-colour: #003f5c;
+    --secondary-colour: #2f4b7c;
+    --accent-colour: #665191;
+    --success-colour: #28a745;
+    --warning-colour: #ffc107;
+    --danger-colour: #dc3545;
+    --info-colour: #17a2b8;
+    --purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --light-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-medium: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-strong: 0 8px 16px rgba(0,0,0,0.15);
+    --border-radius: 8px;
+    --border-radius-large: 12px;
+}
+
+/* Base typography and layout improvements */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* Enhanced headings with better spacing */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 { color: var(--primary-colour); }
+h2 { color: var(--secondary-colour); }
+h3 { color: var(--accent-colour); }
+
+/* Interactive elements styling */
+.progress-indicator {
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 1px solid #e9ecef;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--purple-gradient);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Enhanced code blocks */
+.sourceCode {
+    background: var(--light-bg);
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+pre {
+    background: var(--light-bg) !important;
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+th {
+    background: var(--primary-colour);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+tr:nth-child(even) td {
+    background: var(--light-bg);
+}
+
+tr:hover td {
+    background: rgba(23, 162, 184, 0.05);
+}
+
+/* Interactive quiz and exercise styling */
+.quiz-container {
+    background: var(--card-bg);
+    border: 2px solid var(--info-colour);
+    border-radius: var(--border-radius-large);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-medium);
+}
+
+.quiz-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-colour);
+}
+
+.quiz-options {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-options li {
+    background: var(--light-bg);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.quiz-options li:hover {
+    background: rgba(23, 162, 184, 0.1);
+    transform: translateX(5px);
+    border-color: var(--info-colour);
+}
+
+.quiz-options li.correct {
+    background: var(--success-colour);
+    color: white;
+}
+
+.quiz-options li.incorrect {
+    background: var(--danger-colour);
+    color: white;
+}
+
+/* Scenario and case study boxes */
+.scenario-box {
+    background: var(--warning-colour);
+    color: var(--text-primary);
+    border-radius: var(--border-radius-large);
+    padding: 2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.scenario-box::before {
+    content: "🎭";
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.case-study {
+    background: var(--light-bg);
+    border-left: 4px solid var(--accent-colour);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    position: relative;
+}
+
+.case-study::before {
+    content: "📊";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Navigation and progress elements */
+.module-navigation {
+    background: var(--card-bg);
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius-large);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    background: var(--primary-colour);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: var(--secondary-colour);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    color: white;
+    text-decoration: none;
+}
+
+.nav-button.secondary {
+    background: var(--info-colour);
+}
+
+.nav-button.secondary:hover {
+    background: #138496;
+}
+
+/* Learning objectives and summaries */
+.learning-objectives {
+    background: var(--info-colour);
+    color: white;
+    border-radius: var(--border-radius-large);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.learning-objectives h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.learning-objectives ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.module-summary {
+    background: var(--success-colour);
+    color: white;
+    border-radius: var(--border-radius-large);
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.module-summary h3 {
+    color: white;
+    margin-top: 0;
+}
+
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus indicators for keyboard navigation */
+button:focus,
+.nav-button:focus,
+.quiz-options li:focus {
+    outline: 2px solid var(--accent-colour);
+    outline-offset: 2px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    
+    .module-navigation {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .quiz-container,
+    .scenario-box,
+    .case-study {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .module-navigation,
+    .nav-button,
+    .progress-indicator {
+        display: none;
+    }
+    
+    .quiz-container,
+    .scenario-box,
+    .case-study {
+        border: 1px solid #333;
+        page-break-inside: avoid;
+    }
+    
+    * {
+        box-shadow: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --light-bg: #ffffff;
+        --card-bg: #ffffff;
+        --text-primary: #000000;
+        --text-secondary: #333333;
+    }
+    
+    .quiz-options li {
+        border: 2px solid var(--text-primary);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .progress-fill {
+        transition: none;
+    }
+}
