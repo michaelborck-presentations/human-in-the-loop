@@ -11,14 +11,15 @@ Quarto documentation project for human-in-the-loop content.
 │   ├── faq.md
 │   ├── presentation.md
 │   └── references.md
-└── docs/            # Rendered output (gitignored)
+└── docs/            # Rendered output for GitHub Pages
 ```
 
 ## Workflow
 
 1. Edit source files in `source/`
-2. Render documents to `docs/` folder
-3. The `docs/` folder is ignored by git (contains generated output only)
+2. Render documents locally to `docs/` folder
+3. Commit and push both source and rendered output
+4. GitHub Pages serves content from `docs/` folder
 
 ## Requirements
 

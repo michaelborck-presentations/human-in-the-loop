@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resources and materials for the 'Humans in the Loop: Why Your AI Needs a Co-Pilot' presentation - Curtin University Executive Education">
+    <title>Humans in the Loop - Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #1a472a;
+            --secondary-color: #f7941d;
+            --text-dark: #2c2c2c;
+            --text-light: #666;
+            --bg-light: #f5f5f5;
+            --border-color: #ddd;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3d 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .intro {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .intro h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .intro p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .framework-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .framework-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-top: 3px solid var(--secondary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .framework-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .framework-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+        
+        .framework-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        .framework-card .tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 0.75rem;
+        }
+        
+        .section {
+            margin: 4rem 0;
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        .resource-card:hover {
+            border-color: var(--secondary-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .resource-card h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-card p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .download-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .download-btn:hover {
+            background: #2d5a3d;
+        }
+        
+        .download-btn::before {
+            content: "📄";
+            margin-right: 0.5rem;
+        }
+        
+        .download-btn.html::before {
+            content: "🌐";
+        }
+        
+        .download-btn.pdf::before {
+            content: "📕";
+        }
+        
+        .download-btn.pptx::before {
+            content: "📊";
+        }
+        
+        .courses {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3d 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        
+        .courses h2 {
+            color: white;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .course-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .course-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .course-card p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+        
+        .course-card .cta-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        
+        .course-card .cta-btn:hover {
+            background: #e88515;
+        }
+        
+        .contact {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+        
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .framework-summary {
+                grid-template-columns: 1fr;
+            }
+            
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Humans in the Loop</h1>
+        <p>Why Your AI Needs a Co-Pilot</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome</h2>
+            <p>Thank you for attending our Lunch & Learn session on AI leadership and governance. This resource hub provides everything you need to continue your learning journey, including presentation materials, comprehensive FAQs, case study references, and pathways to deeper expertise through our executive courses.</p>
+        </div>
+
+        <div class="framework-summary">
+            <div class="framework-card">
+                <h3>Human-in-the-Loop</h3>
+                <p>AI suggests recommendations, but humans make every decision. Used for high-stakes situations where context, judgment, and accountability are critical.</p>
+                <span class="tag">AI Suggests → Human Decides</span>
+            </div>
+            <div class="framework-card">
+                <h3>Human-on-the-Loop</h3>
+                <p>AI can take actions automatically, but humans monitor continuously and can intervene. Used for high-volume, well-defined tasks with clear patterns.</p>
+                <span class="tag">AI Acts → Human Monitors</span>
+            </div>
+            <div class="framework-card">
+                <h3>Human-in-Command</h3>
+                <p>Humans set strategic boundaries, define success criteria, and own accountability for AI systems. This is the leadership level that governs all AI applications.</p>
+                <span class="tag">Human Sets Rules</span>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>📊 Presentation Materials</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Full Presentation</h3>
+                    <p>Complete slide deck from the Lunch & Learn session, including all speaker notes and examples. Available in multiple formats for your convenience.</p>
+                    <div class="download-links">
+                        <a href="presentation.html" class="download-btn html">View Online</a>
+                        <a href="presentation.pdf" class="download-btn pdf">PDF</a>
+                        <a href="presentation.pptx" class="download-btn pptx">PowerPoint</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>❓ Frequently Asked Questions</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Comprehensive FAQ</h3>
+                    <p>Over 50 questions covering everything from AI basics to mining-specific applications, implementation strategies, costs, governance, and organizational challenges. Organized into 9 major sections for easy navigation.</p>
+                    <div class="download-links">
+                        <a href="faq.html" class="download-btn html">View Online</a>
+                        <a href="faq.pdf" class="download-btn pdf">PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📚 References & Case Studies</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Reference Library</h3>
+                    <p>Comprehensive list of sources, case studies, and research papers supporting the presentation content. Includes predictive maintenance, exploration AI, autonomous operations, safety applications, and industry reports.</p>
+                    <div class="download-links">
+                        <a href="references.html" class="download-btn html">View Online</a>
+                        <a href="references.pdf" class="download-btn pdf">PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section courses">
+            <h2>🎓 Continue Your Learning Journey</h2>
+            <p style="color: white; opacity: 0.95; margin-bottom: 2rem;">Ready to go deeper? Our executive courses transform today's insights into tomorrow's capabilities.</p>
+            
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>AI in Leadership & Project Management</h3>
+                    <p>Learn to lead AI initiatives from pilot to production. Build cross-functional teams, manage implementation projects, and navigate organizational change. Hands-on experience with real challenges from your operations.</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">Ideal for: Mine managers, department heads, technical services managers, project leads</p>
+                    <a href="https://www.curtin.edu.au/study/offering/course-pg-ai-in-leadership-and-project-management--execed-ailpm/" class="cta-btn">Course Details & Registration</a>
+                </div>
+                
+                <div class="course-card">
+                    <h3>AI to Drive Business Innovation</h3>
+                    <p>Develop strategic AI vision for your organization. Identify competitive opportunities, evaluate emerging technologies, and build compelling business cases. Position your operation for AI-driven advantage.</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">Ideal for: Senior executives, general managers, strategic planning roles, innovation leaders</p>
+                    <a href="https://www.curtin.edu.au/study/offering/course-pg-ai-to-drive-business-innovation--execed-aidbi/" class="cta-btn">Course Details & Registration</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <h2>Get in Touch</h2>
+            <p>Have questions? Want to discuss your specific challenges? We're here to help.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:exec.education@curtin.edu.au">exec.education@curtin.edu.au</a>
+                </div>
+                <div class="contact-item">
+                    <span>📞</span>
+                    <a href="tel:+61892663000">+61 8 9266 3000</a>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <a href="https://www.curtin.edu.au/study/programs-and-courses/executive-education/" target="_blank">Curtin Executive Education</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Curtin University. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">Part of the <a href="https://www.curtin.edu.au/study/programs-and-courses/executive-education/">Curtin Executive Education</a> Lunch & Learn Series</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">Last updated: October 2025</p>
+    </footer>
+</body>
+</html>

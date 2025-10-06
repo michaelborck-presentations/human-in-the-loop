@@ -1,13 +1,8 @@
-# Rendered output folder
-docs/
-
 # Quarto
 /.quarto/
 _site/
 _book/
 _manuscript/
-*.html
-*.pdf
 *_files/
 *_cache/
 
