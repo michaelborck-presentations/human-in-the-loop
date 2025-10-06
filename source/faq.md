@@ -1,6 +1,6 @@
 ---
 format:
-  html:
+  html: 
     embed-resources: true
   pdf: default
 --- 
