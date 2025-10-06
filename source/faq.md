@@ -1,7 +1,7 @@
 ---
 format:
   html:
-    embed-resouces: true
+    embed-resources: true
   pdf: default
 --- 
 
