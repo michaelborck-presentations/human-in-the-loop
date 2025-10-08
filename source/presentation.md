@@ -21,8 +21,13 @@ format:
       - left=20mm
 ---
 
+![](./assets/images/slide-0.png)
+
 # The Vision
 
+![](./assets/images/slide-1.png)
+
+::: {.notes}
 **A geologist asked an AI a simple question:**
 
 *"Why is the gold grade dropping in the eastern pit wall?"*
@@ -34,8 +39,6 @@ format:
 - Production records
 
 **Quickly, it identified a subtle fault offset** that three experienced geologists had debated for months.
-
-::: {.notes}
 
 "Good afternoon. Before we talk about frameworks or theory, I want to show you what's possible right now."
 
@@ -64,8 +67,10 @@ Note: This type of LLM application for geological analysis is becoming increasin
 
 # How do we harness AI's power without losing control?
 
-::: {.columns}
-::: {.column width="50%"}
+![](./assets/images/slide-2.png)
+
+::: {.notes}
+
 **The Tension:**
 
 - AI can analyze data faster than humans
@@ -73,9 +78,7 @@ Note: This type of LLM application for geological analysis is becoming increasin
 - AI can work 24/7 without fatigue
 
 *But...*
-:::
 
-::: {.column width="50%"}
 **The Reality:**
 
 - We need human judgment
@@ -83,10 +86,7 @@ Note: This type of LLM application for geological analysis is becoming increasin
 - We need context and nuance
 
 *So where's the balance?*
-:::
-:::
 
-::: {.notes}
 "If you're in this room, you're probably feeling this tension. On one hand, the capabilities are undeniable, AI is getting remarkably good at specific tasks. On the other hand, you've got operations to run, people to keep safe, decisions where you can't afford to get it wrong."
 
 "You've probably heard two narratives: One says 'adopt AI or get left behind.' The other says 'be very careful, AI makes mistakes.'"
@@ -108,19 +108,19 @@ Note: This type of LLM application for geological analysis is becoming increasin
 
 # The Framework (Simplified)
 
+![](./assets/images/slide-3.png)
+
+::: {.notes}
 ## Three Ways Humans Stay in Control
 
 Think of it like driving a car with different levels of automation:
 
-::: {.incremental}
 1. **AI suggests a route, you decide** → Human-in-the-Loop
 2. **Cruise control drives, you monitor** → Human-on-the-Loop  
 3. **You set the speed limit** → Human-in-Command
-:::
 
 **Same principle applies to AI in mining.**
 
-::: {.notes}
 "The framework is simple. There are three levels of human control when working with AI."
 
 "Level 1: Human-in-the-Loop. The AI recommends, you decide. Like when your GPS suggests a route—it analyzes traffic, calculates fastest path—but YOU decide whether to follow it. You're in the loop on every decision."
@@ -138,6 +138,11 @@ Keep this section SHORT. You're giving them the mental model, not exhaustive exp
 
 # Level 1: When AI Suggests, You Decide
 
+![](./assets/images/slide-4.png)
+
+
+::: {.notes}
+
 **Dispatch systems** suggest truck assignments
 - Dispatcher reviews, then decides
 - Can override based on real conditions
@@ -145,7 +150,6 @@ Keep this section SHORT. You're giving them the mental model, not exhaustive exp
 
 **Why?** Because local knowledge matters. The system doesn't know about that soft spot on Haul Road 3.
 
-::: {.notes}
 "You're probably already doing Human-in-the-Loop without calling it that. Your dispatch system, it's optimizing truck movements, suggesting assignments. But does it automatically move the trucks? No. The dispatcher looks at the suggestion and decides."
 
 "Why? Because the dispatcher knows things the AI doesn't. There's a wet patch on one haul road. One operator is new and shouldn't get the tricky route yet. A truck that looks available on the screen is actually being refueled."
@@ -159,6 +163,10 @@ Keep this section SHORT. You're giving them the mental model, not exhaustive exp
 
 # Level 2: When AI Acts, You Monitor
 
+![](./assets/images/slide-5.png)
+
+::: {.notes}
+
 **Predictive maintenance** systems flag equipment automatically
 
 - AI analyzes sensor data 24/7
@@ -167,7 +175,6 @@ Keep this section SHORT. You're giving them the mental model, not exhaustive exp
 
 **Why?** Because you can't watch 50 trucks continuously, but humans verify before pulling equipment offline.
 
-::: {.notes}
 
 "Level 2 is where AI starts to feel powerful. Your haul trucks have sensors everywhere, vibration, temperature, pressure, fluid levels. Thousands of data points per truck, 24/7."
 
@@ -186,6 +193,10 @@ Again, keep it crisp. You're showing possibilities, not technical details.
 
 # Level 3: You Set the Rules
 
+![](./assets/images/slide-6.png)
+
+::: {.notes}
+
 **Autonomous trucks** in the Pilbara
 
 - AI drives the trucks
@@ -194,7 +205,6 @@ Again, keep it crisp. You're showing possibilities, not technical details.
 
 **Why?** Someone must be accountable for safety policies and operational boundaries.
 
-::: {.notes}
 "Some of you know that Rio Tinto and Fortescue have hundreds of autonomous trucks operating right now. The AI is driving—steering, accelerating, navigating."
 
 "Does that mean humans aren't in control? Absolutely not."
@@ -212,11 +222,14 @@ Again, keep it crisp. You're showing possibilities, not technical details.
 
 # Quick Poll: Which Worries You More?
 
+![](./assets/images/slide-7.png)
+
+::: {.notes}
+
 **A) AI making decisions without human oversight**
 
 **B) Competitors using AI while you move too slowly**
 
-::: {.notes}
 "Which actually keeps you up at night? The risk of AI making a wrong decision? Or the risk that while you're being cautious, your competitors are gaining advantage?"
 
 "Here's why this matters: Both risks are real. But they require different responses."
@@ -234,6 +247,10 @@ Again, keep it crisp. You're showing possibilities, not technical details.
 
 # A Real Dilemma
 
+![](./assets/images/slide-8.png)
+
+::: {.notes}
+
 ## Scenario: Autonomous Pit Wall Monitoring
 
 Your new system detects ground movement 24/7.
@@ -248,7 +265,6 @@ Critical movement detected →
 
 **Which would YOU choose?**
 
-::: {.notes}
 "Let me give you a scenario that mining operations are facing right now."
 
 "You've invested in a state-of-the-art pit wall monitoring system. LiDAR, radar, prisms—continuously measuring ground movement down to millimeters. The AI is trained to detect acceleration patterns that might indicate instability."
@@ -275,21 +291,23 @@ Present Option B: "Or the system could be programmed to automatically sound evac
 
 # The Art of the Possible
 
+![](./assets/images/slide-9.png)
+
+
+::: {.notes}
+
 ## What Changes in 3 Years?
 
 Imagine walking onto your site in 2028...
 
-::: {.incremental}
 - **Your morning brief** is AI-generated from overnight sensor data, shift reports, and equipment status
 - **Your geologist** spends 90% of time on interpretation, 10% on data compilation (used to be reversed)
 - **Your maintenance team** works on predicted failures, not emergencies
 - **Your safety meetings** discuss trends the AI spotted across 20 sites
 - **Your AI systems coordinate themselves**: Equipment flagged → AI checks parts inventory, finds service windows, schedules crews (agentic workflows in action)
-:::
 
 **The work doesn't disappear. It gets elevated.**
 
-::: {.notes}
 "Let's fast-forward. It's 2028—just three years from now. You walk onto site Monday morning. What's different?"
 
 "Your morning brief is waiting. The AI has already compiled overnight data—production actuals, equipment alerts, safety incidents, weather forecast, truck utilisation. It's highlighted the three things that need your attention today. This used to take your superintendent an hour to prepare. Now it's done before you arrive, and it's actually MORE comprehensive because the AI looked at patterns across weeks of data."
@@ -315,21 +333,20 @@ Imagine walking onto your site in 2028...
 
 ---
 
-# This Isn't Science Fiction
+![](./assets/images/slide-10.png)
+
+::: {.notes}
 
 **Real implementations, today:**
 
-::: {.incremental}
 - **KoBold Metals**: AI discovered major copper deposit in Zambia (2023)
 - **Komatsu + Mining Fleets**: 40% reduction in unplanned downtime via predictive maintenance
 - **Multiple Operators**: Generative AI analyzing shift reports and safety logs at scale
-:::
 
 *Sources: Reuters, Deloitte Insights, Global Mining Review, Financial Times*
 
 **More details and references available at [support website](https://michaelborck-presentations.github.io/human-in-the-loop/)**
 
-::: {.notes}
 "I know what some of you might be thinking: 'This sounds great in theory, but is it actually happening?' Let me give you three real examples from the last two years."
 
 "KoBold Metals—backed by Bill Gates and partnered with BHP, used AI to analyze geological data across Zambia. In 2023, they announced the discovery of a major copper deposit. The AI identified patterns across geochemical surveys, historical drilling, and geological maps that pointed to a high-probability target. This wasn't a lucky guess, it was systematic pattern recognition at a scale humans couldn't match."
@@ -349,19 +366,20 @@ Imagine walking onto your site in 2028...
 
 # The Unexpected Twist
 
+![](./assets/images/slide-11.png)
+
+::: {.notes}
+
 **The biggest barrier isn't the technology.**
 
-::: {.incremental}
 - The AI models exist
 - The sensors are deployed
 - The computing power is affordable
 
 **The barrier is:** Figuring out where humans should be in the loop.
-:::
 
 That's a leadership question, not a technical one.
 
-::: {.notes}
 
 "Here's what might surprise you. When companies struggle with AI adoption, it's rarely because the technology doesn't work."
 
@@ -388,6 +406,10 @@ This repositions the courses as leadership development, not technical training. 
 
 # Your Turn to Think
 
+![](./assets/images/slide-12.png)
+
+::: {.notes}
+
 **Think of ONE repetitive task you do regularly.**
 
 *Examples: Weekly reports, data compilation, scheduling, reviewing standard documents*
@@ -398,7 +420,7 @@ This repositions the courses as leadership development, not technical training. 
 2. Where would you need to stay involved?
 3. What would free up your time enable you to do instead?
 
-::: {.notes}
+
 "I'm going to give you 60 seconds. Don't write anything down if you don't want to. Just think."
 
 "Pick one task you do regularly that feels repetitive. Maybe it's compiling a weekly report. Maybe it's reviewing routine documents. Maybe it's schedule optimization. Something where you think: 'This takes time but it's not where I add the most value.'"
@@ -421,6 +443,10 @@ This repositions the courses as leadership development, not technical training. 
 
 # Where to Go from Here
 
+![](./assets/images/slide-13.png)
+
+::: {.notes}
+
 ## Three Levels, One Principle
 
 **Human-in-the-Loop:** AI suggests, you decide *(high stakes, context matters)*
@@ -434,7 +460,6 @@ This repositions the courses as leadership development, not technical training. 
 > 
 > Not "Should we use AI?" but "Where should humans be in this system?"
 
-::: {.notes}
 
 "We've covered a lot in 40 minutes. Let me bring it back to the core."
 
@@ -453,6 +478,10 @@ This repositions the courses as leadership development, not technical training. 
 ---
 
 # Continue the Conversation
+
+![](./assets/images/slide-14.png)
+
+::: {.notes}
 
 **October/November Executive Courses:**
 
@@ -474,7 +503,7 @@ Identify strategic AI opportunities
 
 **Today was the spark. The courses are where you build the fire.**
 
-::: {.notes}
+
 "What we covered today is the foundation—a framework for thinking about AI. But it's just the starting point."
 
 "If you want to go deeper—if you want to not just understand these concepts but apply them strategically in your operations—that's what the October and November courses are designed for."
@@ -494,11 +523,14 @@ Identify strategic AI opportunities
 
 ---
 
-# Questions & Connections
+# Questions 
+
+![](./assets/images/slide-15.png)
+
+::: {.notes}
 
 **What questions are on your mind?**
 
-::: {.notes}
 "We have a few minutes for questions. What's on your mind?"
 
 "Is AI going to eliminate jobs in mining?"
@@ -520,19 +552,20 @@ Identify strategic AI opportunities
 
 # Thank You
 
+![](./assets/images/slide-16.png)
+
+::: {.notes}
 **Remember: AI doesn't replace judgment. It amplifies it.**
 
 **The question isn't whether to use AI.**
 
 **The question is: Where are the humans in your system?**
 
----
-
 **Contact:** michael.borck@curtin.edu.au  
 **Resources & FAQs:** [Support Website](https://michaelborck-presentations.github.io/human-in-the-loop/)  
 **Courses:** [Registration link](https://www.curtin.edu.au/study/professional-development/executive-education/)
 
-::: {.notes}
+
 "Thank you for your time and attention. I want to leave you with one thought:"
 
 "AI doesn't replace human judgment. It amplifies it. It handles scale, speed, pattern recognition. You provide context, accountability, strategic direction."
