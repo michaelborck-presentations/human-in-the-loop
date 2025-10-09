@@ -554,16 +554,18 @@ Identify strategic AI opportunities
 
 ![](./assets/images/slide-16.png)
 
+
+**Contact:** michael.borck@curtin.edu.au  
+**Resources & FAQs:** [Support Website](https://michaelborck-presentations.github.io/human-in-the-loop/)  
+**Courses:** [Registration link](https://www.curtin.edu.au/study/professional-development/executive-education/)
+
+
 ::: {.notes}
 **Remember: AI doesn't replace judgment. It amplifies it.**
 
 **The question isn't whether to use AI.**
 
 **The question is: Where are the humans in your system?**
-
-**Contact:** michael.borck@curtin.edu.au  
-**Resources & FAQs:** [Support Website](https://michaelborck-presentations.github.io/human-in-the-loop/)  
-**Courses:** [Registration link](https://www.curtin.edu.au/study/professional-development/executive-education/)
 
 
 "Thank you for your time and attention. I want to leave you with one thought:"
