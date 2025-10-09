@@ -131,7 +131,6 @@ Think of it like driving a car with different levels of automation:
 
 "That's it. Three levels. Now let's see what this looks like in mining operations you know."
 
-Keep this section SHORT. You're giving them the mental model, not exhaustive explanation. Move quickly to examples that bring it to life.
 :::
 
 ---
@@ -186,7 +185,6 @@ Keep this section SHORT. You're giving them the mental model, not exhaustive exp
 
 "This level works when volume is high, patterns are clear, and mistakes are fixable."
 
-Again, keep it crisp. You're showing possibilities, not technical details.
 :::
 
 ---
